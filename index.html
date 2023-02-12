@@ -1,24 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Musical Octo Train</title>
-  </head>
-  <body>
-    <header>
-      <h1>Should I listen it?</h1>
-      <form id="form">
-        <input type="text" placeholder="Search" id="search" class="search" />
-      </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>My tour and travel</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="logo" />
+            </a>
+            <a href="#" class="nav__logo">My tour and travel</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
-    <main id="main"></main>
-    <footer class="footer">
-      <p>
-        This project uses the TMDb API but is not endorsed or certified by TMDb.
-      </p>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">My tour and travel</h1>
+                    <h2 class="home__subtitle">Traveling leaves you speechless,<br> then turns you into a storyteller.</h2>
+                    <a href="#" class="button">View Menu</a>
+                </div>
+
+                <img src="img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About us</span>
+                    <h2 class="section-title about__initial">Travel and tourism <br> is the largest service industry</h2>
+                    <p class="about__description">Our main objective of is to improve and expand existing tourism products to ensure employment generation and economic growth. </p>
+                    <a href="#" class="button">Explore history</a>
+                </div>
+
+                <img src="img/about.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Offering</span>
+            <h2 class="section-title">Our amazing services</h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 
+                        168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 
+                        9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 
+                        18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 
+                        13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 
+                        6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 
+                        31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                    </svg>
+
+                    <h3 class="services__title">Tourist Destinations</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                </div>
+
+                <div class="services__content">
+                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M200 0c-30.6 0-56 54.7-56 86.1V192.5L7.8 274.3C2.9 277.2 0 282.4 0 288v64c0 
+                        5.1 2.4 9.8 6.4 12.8s9.3 3.9 14.1 2.5l123.4-37v81.2l-50 40c-3.8 3-6 7.6-6 12.5v32c0 5.1 
+                        2.5 10 6.6 13s9.5 3.8 14.4 2.2L200 480.9 290.4 
+                        511c-1.6-4.7-2.4-9.8-2.4-15V463.4c-18.2-10.5-30.7-29.7-31.9-51.8l-.1-.1V408 325.5 184l0-1.1 
+                        0 0V86.1C256 54.7 231.5 0 200 0zm88 176V400c0 20.9 13.4 38.7 32 45.3V488c0 13.3 10.7 24 24 
+                        24h16c13.3 0 24-10.7 24-24V448H544v40c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V445.3c18.6-6.6 
+                        32-24.4 32-45.3V176c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48zm79.8 78.7c3.3-8.7 11.2-14.7 
+                        20.5-14.7H539.7c9.2 0 17.2 6 20.5 14.7L576 304H352l15.8-49.3zM568 352a24 24 0 1 1 0 48 24 24 0 1 1 
+                        0-48zM336 376a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg>
+                    <h3 class="services__title">Modes of Travel</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years, with the
+                        best and delicious food in the city.</p>
+                </div>
+
+                <div class="services__content">
+                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M0 32C0 14.3 14.3 0 32 0H480c17.7 0 32 14.3 32 32s-14.3 32-32 32V448c17.7 0 32 14.3 32 
+                        32s-14.3 32-32 32H304V464c0-26.5-21.5-48-48-48s-48 21.5-48 48v48H32c-17.7 0-32-14.3-32-32s14.3-32 
+                        32-32V64C14.3 64 0 49.7 0 32zm96 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H112c-8.8 0-16 
+                        7.2-16 16zM240 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H240zm112 
+                        16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zM112 192c-8.8 0-16 
+                        7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H112zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 
+                        0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H240c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 
+                        0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H368zM328 384c13.3 0 24.3-10.9 21-23.8c-10.6-41.5-48.2-72.2-93-72.2s-82.5 30.7-93 
+                        72.2c-3.3 12.8 7.8 23.8 21 23.8H328z" />
+                    </svg>
+                    <h3 class="services__title">Accomodation</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                </div>
+                <div class="services__content">
+                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 
+                        298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 
+                        72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 
+                        43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 
+                        21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 
+                        352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
+                    </svg>
+                    <h3 class="services__title">Approved Agents</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years, with the best and
+                        delicious food in the city.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's talk</span>
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <p class="contact__description">If you want to travel, contact us and we will attend you quickly,
+                        with our 24/7 chat service.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button">Contact us now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">My Tour and Travel</a>
+                <span class="footer__description">Endless fun</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Tourist Destinations</a></li>
+                    <li><a href="#" class="footer__link">Modes of Travel</a></li>
+                    <li><a href="#" class="footer__link">Accomodation</a></li>
+                    <li><a href="#" class="footer__link">Approved Agents</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Event</a></li>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+                    <li><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Address</h3>
+                <ul>
+                    <li>Bengaluru-India</li>
+                    <li>Hosur</li>
+                    <li>999-888-777</li>
+                    <li>mytourandtravel@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2023 mytourandtravel ltd. All rights are reserved</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+</body>
+
 </html>
