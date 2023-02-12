@@ -359,8 +359,7 @@ img{
 }
 
 .menu__img{
-  width: 500px;
-  height:500px;
+  width: 100;
   align-self: center;
   margin-bottom: var(--mb-2);
   border-radius: 16px;
