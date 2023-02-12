@@ -311,16 +311,17 @@ img{
 .services__container{
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ 
+}
+
+.services__content{
+  text-align: center;
   border-style: solid;
     border-width: 1px;
     border-color: #e5eaf4;
     border-radius: 16px;
   padding:3px;
   margin:3px;
-}
-
-.services__content{
-  text-align: center;
 }
 
 .services__img{
