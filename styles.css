@@ -6,13 +6,13 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069C54;
-  --first-color-alt: #048654;
-  --title-color: #393939;
-  --text-color: #707070;
-  --text-color-light: #A6A6A6;
-  --body-color: #fbfefd;
-  --container-color: #FFFFFF;
+     --first-color: #0033cc;
+    --first-color-alt: #0039e6;
+    --title-color: #003300;
+    --text-color: #666699;
+    --text-color-light: #c2c2d6;
+    --body-color: #ffffff;
+    --container-color: #ffdd99;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -188,6 +188,10 @@ img{
   font-weight: var(--font-medium);
 }
 
+.logo {
+    width: 60px;
+    height: 50px;
+}
 .nav__logo:hover{
   color: var(--first-color);
 }
