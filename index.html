@@ -26,28 +26,30 @@
 
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="" class="logo" />
+                <img src="logo.png" class="logo" />
             </a>
-            <a href="#" class="nav__logo">My tour and travel</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#about" id="navItem2">About</a>
+                    <a class="nav-link" href="#services" id="navItem3">Services</a>
+                    <a class="nav-link" href="#destinations" id="navItem4">Destinations</a>
+                    <a class="nav-link" href="#contact" id="navItem4">Contact us</a>
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </div>
             </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        </div>
+    </nav>
+       
     </header>
 
     <main class="l-main">
