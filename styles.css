@@ -392,28 +392,6 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
-/*========== APP ==========*/
-.app__data{
-  text-align: center;
-}
-
-.app__description{
-  margin-bottom: var(--mb-5);
-}
-
-.app__stores{
-  margin-bottom: var(--mb-4);
-}
-
-.app__store{
-  width: 120px;
-  margin: 0 var(--mb-1);
-}
-
-.app__img{
-  width: 230px;
-  justify-self: center;
-}
 
 /*========== CONTACT ==========*/
 .contact__container{
@@ -428,17 +406,18 @@ img{
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
-
 }
 
 .footer__logo{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
   font-weight: var(--font-semi-bold);
 }
 
 .footer__description{
   display: block;
+  font-size: var(--small-font-size);
   margin: .25rem 0 var(--mb-3);
-
 }
 
 .footer__social{
@@ -469,7 +448,6 @@ img{
   color: var(--text-color-light);
   margin-top: 3.5rem;
 }
-
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
